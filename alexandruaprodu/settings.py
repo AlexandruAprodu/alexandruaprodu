@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'home.apps.HomeConfig',
     'the_artist.apps.TheArtistConfig',
     'the_professional.apps.TheProfessionalConfig',
     'django.contrib.admin',
@@ -125,5 +126,5 @@ MEDIA_URL = '/media/'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'alexandruaprodu.prof@gmail.com'
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_PASSWORD = 'objwzipbjkitxamt'
 EMAIL_USE_TLS = True

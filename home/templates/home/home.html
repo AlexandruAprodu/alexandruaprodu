@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="{% static 'the_professional/css/style_home.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'the_professional/images/favicon.png' %}">
+	<!-- Google web font  -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>{{ title }}</title>
+    {% endif %}
+    <title>Alexandru Aprodu</title>
+
+</head>
+<body>
+
+    <div class="all">
+
+        <div class="left" id="stanga">
+            <div class="text">The Artist</div>
+        </div>
+
+        <div class="center" id="mijloc">
+            <div class="explainer"><span></span></div>
+        <div class="text">Contact Form</div>
+        </div>
+        <div class="right" id="dreapta">
+            <div class="text">The Professional</div>
+        </div>
+    </div>
+    <script src="{% static 'the_professional/js/click.js' %}"></script>
+    <script type=text/javascript>
+        var url1 = "{% url 'the_artist:index' %}"
+        var url2 = "{% url 'the_artist:contact' %}"
+        var url3 = "{% url 'the_professional:index' %}"
+    </script>
+</body>
