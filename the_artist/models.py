@@ -11,6 +11,9 @@ class Prime(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name_plural = "Prime"
+
 
 class ImagesPrime(models.Model):
     title = models.CharField(max_length=100, default='titlu')
@@ -19,6 +22,9 @@ class ImagesPrime(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name_plural = "ImagesPrime"
 
 
 class Biography(models.Model):
@@ -29,6 +35,9 @@ class Biography(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name_plural = "Biography"
+
 
 class AudioMixes(models.Model):
     title = models.CharField(max_length=100)
@@ -36,6 +45,9 @@ class AudioMixes(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name_plural = "AudioMixes"
 
 
 class FacebookLive(models.Model):
@@ -47,6 +59,8 @@ class FacebookLive(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        verbose_name_plural = "FacebookLive"
 
 
 
