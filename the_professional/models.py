@@ -40,8 +40,8 @@ class Services(models.Model):
 
 class Projects(models.Model):
     title = models.CharField(max_length=100)
-    paragraph = models.TextField()
-    link = models.TextField()
+    site_link = models.TextField()
+    github_link = models.TextField(default=None)
     image_project = models.ImageField(upload_to='media', verbose_name='Image')
 
     class Meta:

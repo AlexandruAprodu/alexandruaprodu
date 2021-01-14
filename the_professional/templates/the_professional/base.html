@@ -22,7 +22,7 @@
 
     <!-- Favicon
     ================================================== -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'the_artist/images/favicon.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'the_professional/img/favicon.png' %}">
 
 
     <!-- Stylesheets
@@ -34,6 +34,7 @@
     <link href="{% static 'the_professional/css/style.css' %}" rel="stylesheet">
     <link href="{% static 'the_professional/css/responsive.css' %}" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/d3e9d00a22.js" crossorigin="anonymous"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -58,19 +59,17 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a href="#hero" class="site-logo"><img src="{% static 'the_professional/img/logo.png' %}" alt="logo"></a>
-
                 </div><!-- /.navbar-header -->
 
                 <div class="main-menu" id="portfolio-perfect-collapse">
 
                     <ul class="nav navbar-nav navbar-right">
-
+                        <li class="page-scroll"><a href="{% url 'home:home' %}">Back</a></li>
                         <li class="page-scroll"><a href="#hero">Home</a></li>
                         <li class="page-scroll"><a href="#about">About</a></li>
                         <li class="page-scroll"><a href="#service">Service</a></li>
                         <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
-                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        <li class="page-scroll"><a href="{% url 'the_professional:contact' %}">Contact</a></li>
 
                     </ul><!-- /.navbar-nav -->
 
