@@ -12,7 +12,7 @@ body {
   font-weight: 300;
 }
 .all {
-  display: flex;
+  display: contents;
   perspective: 10px;
   transform: perspective(300px) rotateX(20deg);
   will-change: perspective;
@@ -20,23 +20,24 @@ body {
   transition: all 1.3s ease-out;
   justify-content: center;
   transform-style: preserve-3d;
+  font-size:16px;
 }
 .all {
   perspective: 1000px;
   transition: all 1.3s ease-in;
   transform: perspective(10000px) rotateX(0deg);
 }
-.all .text {
+.all:hover .text {
   opacity: 1;
 }
 .all > div {
   opacity: 1;
   transition-delay: 0s;
 }
-.all .explainer {
+.all:hover .explainer {
   opacity: 0;
 }
-.left, .center, .right {
+.left, .center, .right, .lefter, .righter {
   width: 200px;
   height: 150px;
   transform-style: preserve-3d;
@@ -54,7 +55,7 @@ body {
   cursor: pointer;
   background-blend-mode: color-burn;
 }
-.left, .center, .right {
+.left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover {
   box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
   background-color: #ccf;
 }
@@ -70,11 +71,11 @@ body {
   text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
 }
 .lefter {
-  transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);
 }
 .left {
-  transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+
   background-image: url(https://cdn1.iconfinder.com/data/icons/music-4-1/512/music-melody-sound-audio-44-512.png);
 }
 .center {
@@ -82,28 +83,14 @@ body {
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);
 }
 .right {
-  transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+
   background-image: url(https://cdn4.iconfinder.com/data/icons/computer-and-web-2/500/Development-512.png);
 }
 .righter {
-  transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/search-512.png);
 }
-.explainer {
-  font-weight: 300;
-  font-size: 2rem;
-  color: #fff;
-  transition: all 0.6s ease;
-  width: 100%;
-  height: 100%;
-  background-color: #303050;
-  background-image: radial-gradient(circle at center top, #cce, #33a);
-  border-radius: 10px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .ref {
   background-color: #000;
   background-image: linear-gradient(to bottom, #d80, #c00);
