@@ -19,10 +19,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'k=jwwbkeqv#fczukl_0quh-f)4@ykv%5=+$eh$7tsyp(gabj9r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'alexandruaprodu.herokuapp.com', 'www.alexandruaprodu.me']
 
@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'alexandruaprodu.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT'),
+        'NAME': 'heroku_cc609fd550abb86',
+        'USER': 'b1236ce14ac156',
+        'PASSWORD': 'c95aa355',
+        'HOST': 'eu-cdbr-west-03.cleardb.net',
+        'PORT': 3306,
     }
 }
 

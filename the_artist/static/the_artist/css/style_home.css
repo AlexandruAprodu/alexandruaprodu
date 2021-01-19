@@ -27,7 +27,7 @@ body {
   transition: all 1.3s ease-in;
   transform: perspective(10000px) rotateX(0deg);
 }
-.all:hover .text {
+.all .text {
   opacity: 1;
 }
 .all > div {
